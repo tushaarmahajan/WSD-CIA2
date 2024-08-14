@@ -1,0 +1,185 @@
+/* General Body Styling */
+    body {
+            font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333333;
+    padding-top: 70px; /* Space for the fixed navigation bar */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #030303; 
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #f91111 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57 !important; /* Bright yellow on hover */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ba17f0; /* White toggler for contrast */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7));
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Image Gallery */
+.gallery-section {
+    padding: 50px 0;
+    background-color: #d503ff; /* purple background */
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ed2098; /* Match navigation color */
+}
+
+.gallery-section .gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-section .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Map Section */
+#mapid {
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    background-color: #128cd3; /* Light blue background */
+}
+
+/* Footer */
+.footer {
+    background-color: #007bff; /* Bright blue footer */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffdd57; /* Bright yellow links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.modal-header {
+    background-color: #007bff; /* Bright blue header */
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 20px;
+    color: #333333;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/* Review Section */
+.review-section {
+    padding: 50px 0;
+    background-color: #f7faff; /* Light blue background */
+    border-top: 1px solid #dee2e6;
+}
+
+.review-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.review-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .gallery-section h2,
+    .review-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .review-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+

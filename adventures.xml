@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adventures  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="adventures.xsd">
+    <adventure>
+        <name>Mountain Peak</name>
+        <country>Nepal</country>
+        <description>A challenging yet rewarding climb to the peak.</description>
+    </adventure>
+    <adventure>
+        <name>Jungle Trail</name>
+        <country>India</country>
+        <description>Serene and peaceful forest camping experience.</description>
+    </adventure>
+    <adventure>
+        <name>Desert Safari</name>
+        <country>Dubai</country>
+        <description>A thrilling ride across the endless desert sands.</description>
+    </adventure>
+</adventures>

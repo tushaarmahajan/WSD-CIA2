@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Travel Adventure Blog -Trekker Tushar Mahajan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Adventurous Blogs of Tushar</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home" class="container mt-5">
+        <h1>Welcome to the adventures of Trekker Tushar</h1>
+        <p>Explore my journeys through hiking and camping with me and my picture blogs.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+        <h2>Adventure Gallery</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="adv1.jpg" class="img-fluid gallery-img" alt="Adventure 1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            </div>
+            <div class="col-md-4">
+                <img src="adv2.jpg" class="img-fluid gallery-img" alt="Adventure 2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            </div>
+            <div class="col-md-4">
+                <img src="adv3.jpg" class="img-fluid gallery-img" alt="Adventure 3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Gallery Images -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Adventure 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="adv1.jpg" class="img-fluid" alt="Adventure 1">
+                    <p>Location: Mountain Peak</p>
+                    <p>Review: This was an exhilarating experience...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Adventure 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="adv2.jpg" class="img-fluid" alt="Adventure 2">
+                    <p>Location: Jungle Trail</p>
+                    <p>Review: The serenity of the forest was unmatched...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Adventure 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="adv33.jpg" class="img-fluid" alt="Adventure 3">
+                    <p>Location: Desert Safari</p>
+                    <p>Review: The desert sands were a challenging yet rewarding...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <section id="map" class="container mt-5">
+        <h2>Explore Locations</h2>
+        <div id="mapid" style="height: 400px;"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2>Contact</h2>
+        <p>Feel free to reach out through social media:</p>
+        <p>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a> |
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review" class="container mt-5">
+        <h2>Reviews</h2>
+        <p>Trekker Tushar is still working and reviews will be posted soon !</p>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Leaflet.js for OpenStreetMap -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- Geolocation and Map Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var lat = position.coords.latitude;
+                    var lon = position.coords.longitude;
+                    var mymap = L.map('mapid').setView([lat, lon], 13);
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19
+                    }).addTo(mymap);
+
+                    L.marker([lat, lon]).addTo(mymap)
+                        .bindPopup("<b>You are here!</b>").openPopup();
+                }, function(error) {
+                    console.error("Geolocation error: ", error);
+                    alert("Unable to retrieve your location.");
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        });
+    </script>
+</body>
+</html>
